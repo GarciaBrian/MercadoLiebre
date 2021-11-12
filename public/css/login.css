@@ -20,3 +20,7 @@
     color: white;
     font-weight: bold;
 }
+
+.login button a {
+    color: white;
+}
