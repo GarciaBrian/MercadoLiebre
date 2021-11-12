@@ -14,10 +14,17 @@
 }
 
 .input-radio {
-    justify-self: row;
+    display: flex; 
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.input-radio label,
+.input-radio label, 
+.input-radio input {
+    margin: 10px;
+}
+
+
 .label-categorias {
     display: block;
 }
@@ -26,6 +33,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.div-checkbox {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.div-checkbox input,
+.div-checkbox p {
+    margin: 10px;
+}
+
+
+.div-checkbox:first-child {
+    margin-top: 15px;
 }
 
 

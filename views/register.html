@@ -10,33 +10,49 @@
 </head>
 <body>
     <form action="" class="form-register">
-        <label for="nombreCompleto">Nombre y apellido</label>
-        <input type="text" name="nombre" id="nombreCompleto">
-        <label for="nombreDeUsuario">Nombre de usuario</label>
-        <input type="text" name="nick-name" id="nombreDeUsuario">
-        <label for="fechaNacimiento">Fecha de nacimiento</label>
-        <input type="date" name="fecha-nacimiento" id="fechaNacimiento">
-        <label for="domicilo">Domicilio</label>
-        <input type="text" name="domicilo" id="domicilio">
-        <div class="input-radio">
-            <label for="perfil-usuario">Perfil de usuario</label>
-            <input type="radio" name="perfil-usuario" value="Comprador">
-            <input type="radio" name="perfil-usuario" value="Vendedor">
-        </div>
+        <label for="nombreCompleto">Datos personales</label>
+        <input type="text" name="nombre" placeholder="Nombre Y Apellido">         
+        <input type="text" name="nick-name"  placeholder="Nombre de usuario">         
+        <label for="fechaNacimiento">Fecha de nacimiento</label>         
+        <input type="date" name="fecha-nacimiento">         
+        <input type="text" name="domicilo" placeholder="Domicilio">
+        <input type="email" name="email" placeholder="E-mail">
+        <p>Perfil de usuario</p>
+            <div class="input-radio">
+                <input type="radio" name="perfil-usuario" value="Comprador">
+                <label for="perfil-usuario">Comprador</label>
+                <input type="radio" name="perfil-usuario" value="Vendedor">
+                <label for="perfil-usuario">Vendedor</label>
+            </div>
         <label for="interes" class="label-categorias">Categorias de interés</label>
         <div class="input-checkbox">
-            <input type="checkbox" name="interes" value="Electro">
-            <input type="checkbox" name="interes" value="Moda">
-            <input type="checkbox" name="interes" value="Hogar">
-            <input type="checkbox" name="interes" value="Juguetería">
-            <input type="checkbox" name="interes" value="Vida sana">
+            <div class="div-checkbox">
+                <input type="checkbox" name="interes" value="Electro">
+                <p>Electro</p>
+            </div>
+            <div class="div-checkbox">
+                <input type="checkbox" name="interes" value="Moda">
+                <p>Moda</p>
+            </div>
+            <div class="div-checkbox">
+                <input type="checkbox" name="interes" value="Hogar">
+                <p>Hogar</p>
+            </div>
+            <div class="div-checkbox">
+                <input type="checkbox" name="interes" value="Juguetería">
+                <p>Juguetería</p>
+            </div>
+            <div class="div-checkbox">
+                <input type="checkbox" name="interes" value="Vida sana">
+                <p>vida sana</p>
+            </div>
         </div>
         <label for="foto">Foto de usuario</label>
         <input type="file" name="foto" id="foto">
         <label for="contraseña">Contraseña</label>
-        <input type="password" name="contraseña" id="contraseña">
+        <input type="password" name="contraseña" placeholder="Escriba su contraseña">
         <label for="password">Confirmar Contraseña</label>
-        <input type="password" name="confirmar-contraseña" id="password">
+        <input type="password" name="confirmar-contraseña" placeholder="Escriba nuevamente su contraseña">
         <button type="reset" class="button-register">Borrar</button>
         <button type="menu" class="button-register">Enviar</button>
     </form>
