@@ -21,6 +21,19 @@
     font-weight: bold;
 }
 
+.login button:hover {
+    background-color: #0022AA;
+}
+
+
+
 .login button a {
     color: white;
+}
+
+
+@media (min-width:769px) {
+    #footer-login {
+        margin-top:27%;
+    }
 }

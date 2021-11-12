@@ -18,6 +18,10 @@ footer article.footer-article i {
     margin-bottom: 15px;
 }
 
+footer article.footer-article i:hover {
+    color: #4d79bb;
+}
+
 footer article.footer-article h5 {
     font-size: 16px;
 }
@@ -33,4 +37,11 @@ footer .copy {
     color: var(--gris-oscuro);
     font-size: var(--paragraph);
     margin: 0 0 10px 15px;
+}
+
+
+@media (min-width:769px){
+    .div-article-footer {
+        display: flex;
+    }
 }

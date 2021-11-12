@@ -57,6 +57,12 @@ main.home {
     font-size: 16px;
 }
 
+.card-content .icon-truck i:hover{
+    transform: rotate(-90deg);
+    transition: 1.2s ;
+}
+
+
 .home .card .card-content .product-info {
     display: flex;
     justify-content: space-between;
@@ -89,10 +95,14 @@ main.home {
         flex-wrap: wrap;
     }
 
-    .home .card {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .home .card { 
         width: 45%;
     }
+
+    .card:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 1s;
+    } 
 
     .home .section-title {
         display: block;
@@ -101,7 +111,18 @@ main.home {
 
     .home .card .card-content .product-name {
         display: block;
+        opacity: 0%;
     }
+
+    .product-name:hover {
+        animation: product 2s;
+    }
+
+    @keyframes product{
+        0% {opacity: 0%;}
+        75% {opacity: 75%;}
+        100% {opacity: 100%;}
+       }
 }
 /* desktop */
 @media (min-width: 769px) {
