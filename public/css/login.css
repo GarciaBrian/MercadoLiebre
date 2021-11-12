@@ -1,0 +1,22 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.login input, 
+.login button{
+    margin: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login button {
+    background-color: var(--celeste);
+    color: white;
+    font-weight: bold;
+}

@@ -56,8 +56,13 @@
     /* width: fit-content; */
     border: none;
     background-color: var(--celeste);
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
     border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-register a {
     color: white;
 }
