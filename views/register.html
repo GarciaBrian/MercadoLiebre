@@ -41,12 +41,12 @@
     <main>
         <form action="" class="form-register">
             <label for="nombre-completo">Datos personales</label>
-            <input type="text" name="nombre" placeholder="Nombre Y Apellido" id="nombre-completo">         
-            <input type="text" name="nick-name"  placeholder="Nombre de usuario">         
+            <input type="text" name="nombre" placeholder="Nombre Y Apellido" id="nombre-completo" required>         
+            <input type="text" name="nick-name"  placeholder="Nombre de usuario" required>         
             <label for="fecha-nacimiento">Fecha de nacimiento</label>         
-            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">         
-            <input type="text" name="domicilo" placeholder="Domicilio">
-            <input type="email" name="email" placeholder="E-mail">
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>         
+            <input type="text" name="domicilo" placeholder="Domicilio" required>
+            <input type="email" name="email" placeholder="E-mail" required>
             <p>Perfil de usuario</p>
                 <div class="input-radio">
                     <input type="radio" name="perfil-usuario" value="Comprador">
