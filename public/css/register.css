@@ -4,10 +4,12 @@
     width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
+    max-width: 800px;
 }
 
-.form-register input {
-    margin-bottom: 30px;
+.form-register input,
+.form-register label {
+    margin-bottom: 10px;
     padding: 10px;
     border: none;
     border-radius: 7px;
@@ -71,4 +73,10 @@
 
 .button-register a {
     color: white;
+}
+
+.msg-error {
+    color: #ee0e33;
+    font-size: 15px;
+    margin-bottom: 25px;
 }

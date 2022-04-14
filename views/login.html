@@ -41,7 +41,9 @@
     <main id="main-login">
         <form class="login">
             <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
-            <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">
+            <span id="nameErrors"></span>
+            <input type="password" name="password" id="pass" placeholder="Elegí tu contraseña">
+            <span id="passErrors"></span>
             <button type="menu"><a href="http://localhost:3030">Enviar</a></button>
         </form>
     </main>   
@@ -65,5 +67,6 @@
         </div>
         <p class="copy">Copyright ©️ 1999-2020 MercadoLiebre S.R.L.</p>
     </footer> 
+    <script src="/js/validationLogin.js"></script>
 </body>
 </html>

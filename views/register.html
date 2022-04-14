@@ -41,12 +41,17 @@
     <main>
         <form action="" class="form-register">
             <label for="nombre-completo">Datos personales</label>
-            <input type="text" name="nombre" placeholder="Nombre Y Apellido" id="nombre-completo" required>         
-            <input type="text" name="nick-name"  placeholder="Nombre de usuario" required>         
+            <input type="text" name="nombre" placeholder="Nombre Y Apellido" id="nombre-completo" required>
+            <span id="nameErrors"></span>         
+            <input type="text" name="nick-name"  placeholder="Nombre de usuario" id="nick-name" required>
+            <span id="nickNameErrors"></span>         
             <label for="fecha-nacimiento">Fecha de nacimiento</label>         
-            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>         
-            <input type="text" name="domicilo" placeholder="Domicilio" required>
-            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>
+            <span id="dateErrors"></span>         
+            <input type="text" name="domicilo" placeholder="Domicilio" id="domicilio" required>
+            <span id="domicilioErrors"></span>
+            <input type="email" name="email" placeholder="E-mail" id="inputEmail" required>
+            <span id="emailErrors"></span>
             <p>Perfil de usuario</p>
                 <div class="input-radio">
                     <input type="radio" name="perfil-usuario" value="Comprador">
@@ -81,8 +86,10 @@
             <input type="file" name="foto" id="foto">
             <label for="contraseña">Contraseña</label>
             <input type="password" name="contraseña" placeholder="Escriba su contraseña" id="contraseña">
+            <span id="passwordErrors"></span>
             <label for="password">Confirmar Contraseña</label>
             <input type="password" name="confirmar-contraseña" placeholder="Escriba nuevamente su contraseña" id="password">
+            <span id="passwordErrors2"></span>
             <button type="reset" class="button-register">Borrar</button>
             <button type="menu" class="button-register"><a href="http://localhost:3030">Enviar</a></button>
         </form>
@@ -107,5 +114,6 @@
         </div>
         <p class="copy">Copyright ©️ 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
+    <script src="/js/validationRegister.js"></script>
 </body>
 </html>
